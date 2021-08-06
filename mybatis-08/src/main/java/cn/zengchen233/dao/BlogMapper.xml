@@ -8,18 +8,23 @@
         values (#{id},#{title},#{author},#{createTime},#{views})
     </insert>
 
+    <sql id="if-choose-update">
+        <if test="title != null">
+            title = #{title}
+        </if>
+        <if test="author != null">
+            and author = #{author}
+        </if>
+    </sql>
+
     <select id="queryBlogIF" parameterType="map" resultType="Blog">
         select * from blog
         <where>
-            <if test="title != null">
-                title = #{title}
-            </if>
-            <if test="author != null">
-                and author = #{author}
-            </if>
+            <include refid="if-choose-update"/>
         </where>
 
     </select>
+
     <select id="queryBlogChoose" parameterType="map" resultType="Blog">
         select * from blog
         <where>
@@ -50,4 +55,13 @@
         </set>
         where id = #{id}
     </update>
+
+    <select id="queryBlogForeach" parameterType="map" resultType="Blog">
+        select * from blog
+        <where>
+            <foreach collection="ids" item="id" open="and (" separator="or" close=")">
+                id = #{id}
+            </foreach>
+        </where>
+    </select>
 </mapper>
