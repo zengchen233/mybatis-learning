@@ -6,4 +6,32 @@
     <select id="getUserList" resultType="cn.zengchen233.pojo.User">
         select * from user
     </select>
+
+    <select id="getUserById" parameterType="int" resultType="cn.zengchen233.pojo.User">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="getUserById2" parameterType="map" resultType="cn.zengchen233.pojo.User">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="getUserList2" resultType="cn.zengchen233.pojo.User">
+        select * from user where name like "%"#{name}"%"
+    </select>
+
+    <insert id="addUser" parameterType="cn.zengchen233.pojo.User">
+        insert into user values (#{id},#{name},#{pwd})
+    </insert>
+
+    <insert id="addUser2" parameterType="map">
+        insert into user values (#{userid}, #{name}, #{password})
+    </insert>
+
+    <update id="updateUser" parameterType="cn.zengchen233.pojo.User">
+        update user set name = #{name}, pwd = #{pwd} where id = #{id}
+    </update>
+
+    <delete id="delUser" parameterType="int">
+        delete from user where id = #{id}
+    </delete>
 </mapper>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zengchen233.dao.UserMapper">
+    <!--模糊查询-->
+    <select id="getUserList" parameterType="string" resultType="cn.zengchen233.pojo.User">
+        select * from user where name like "%"#{name}"%"
+    </select>
+</mapper>
