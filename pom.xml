@@ -11,6 +11,8 @@
     <modules>
         <module>mybatis-01</module>
         <module>mybatis-02</module>
+        <module>mybatis-03</module>
+        <module>mybatis-04</module>
     </modules>
 
     <properties>
@@ -60,6 +62,13 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jboss/jboss-vfs -->
+        <!--解决控制台乱码问题-->
+        <dependency>
+            <groupId>org.jboss</groupId>
+            <artifactId>jboss-vfs</artifactId>
+            <version>3.2.11.Final</version>
         </dependency>
     </dependencies>
 </project>

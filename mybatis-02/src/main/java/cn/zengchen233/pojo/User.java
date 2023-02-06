@@ -3,7 +3,9 @@ package cn.zengchen233.pojo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.apache.ibatis.type.Alias;
 
+@Alias("user")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

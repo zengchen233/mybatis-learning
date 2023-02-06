@@ -7,6 +7,11 @@
     <!--引入外部配置文件-->
     <properties resource="jdbc.properties"/>
 
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+
+    <!--别名,自动类名小写-->
     <typeAliases>
         <package name="cn.zengchen233.pojo"/>
     </typeAliases>
@@ -23,9 +28,7 @@
         </environment>
     </environments>
 
-     <!--将包内的映射器接口实现全部注册为映射器-->
     <mappers>
-        <!--<package name="cn.zengchen233.dao"/>-->
         <mapper resource="mapper/UserMapper.xml"/>
     </mappers>
 </configuration>
