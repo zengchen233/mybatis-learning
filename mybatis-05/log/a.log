@@ -1,0 +1,17 @@
+[DEBUG][23-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][23-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.JBoss6VFS
+[DEBUG][23-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class cn.zengchen233.pojo.User matches criteria [is assignable to Object]
+[DEBUG][23-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][23-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][23-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][23-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][23-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][23-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1014982340.
+[DEBUG][23-02-07][cn.zengchen233.mapper.UserMapper.getByName]==>  Preparing: select * from user where name = ? 
+[DEBUG][23-02-07][cn.zengchen233.mapper.UserMapper.getByName]==> Parameters: fuck(String)
+[DEBUG][23-02-07][cn.zengchen233.mapper.UserMapper.getByName]<==      Total: 1
+[DEBUG][23-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3c7f66c4]
+[DEBUG][23-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1014982340 to pool.
+[DEBUG][23-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][23-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.JBoss6VFS
+[DEBUG][23-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class cn.zengchen233.pojo.User matches criteria [is assignable to Object]
