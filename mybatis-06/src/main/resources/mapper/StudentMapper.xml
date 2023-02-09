@@ -36,7 +36,6 @@
         from student s,
              teacher t
         where s.tid = t.id;
-
     </select>
 
 </mapper>
